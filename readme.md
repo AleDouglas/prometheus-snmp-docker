@@ -109,7 +109,7 @@ docker compose restart
 8. **Configurando Target do SNMP Exporter**
 
 
-Após todas essas etapas, precisamos entrar dizer ao SNMP Exporter qual IP estaremos utilizando.
+Após todas essas etapas, precisamos entrar na página do SNMP Exporter dizer qual IP estaremos utilizando.
 
 ```
 localhost/9116
