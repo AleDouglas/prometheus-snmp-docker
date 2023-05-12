@@ -68,6 +68,7 @@ Verificar arquivo: generator-example.yml
 ```
 
 5. Criando arquivo snmp.yml
+
 **Com isso, o generator irá criar um novo arquivo snmp.yml utilizando as configurações do generator.yml**
 
 ```
@@ -75,6 +76,7 @@ Verificar arquivo: generator-example.yml
 ```
   
 6. Copiar arquivo snmp.yml para pasta de configuração
+
 **Devemos mover o arquivo snmp gerado para a pasta onde o docker-compose está localizado, substituíndo o arquivo snmp.yml antigo pelo novo gerado.**
 
 ```
