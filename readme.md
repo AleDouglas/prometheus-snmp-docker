@@ -30,6 +30,7 @@ Isso iniciará os três serviços do Prometheus, Node Exporter e SNMP Exporter e
 >Espero que isso ajude a configurar os serviços do **Prometheus, Node Exporter e SNMP Exporter usando o Docker Compose**.
 
 <hr>
+
 #### Ligando SNMP Exporter ao IP do Switch
 
 É **necessário** apontar o endereço de IP do Switch para o SNMP Exporter.
@@ -41,6 +42,7 @@ Após isso, basta em target colocar o IP do Switch e apenas submeter.
 **Caso localhost não funcione, experimente configurar com o IP presente na máquina.**
 
 <hr>
+
 ## Sobre o SNMP Exporter Generator
 
 A biblioteca "generator" do projeto SNMP Exporter do Prometheus é uma ferramenta útil para gerar configurações YAML de forma automatizada para coleta de métricas SNMP de dispositivos.
