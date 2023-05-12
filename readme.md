@@ -88,3 +88,17 @@ sudo cp snmp.yml [path do docker]
 ```
 sudo docker compose restart
 ```
+
+
+8. Configurando SNMP Exporter para Prometheus:
+
+### Importante
+
+Após todas essas etapas, precisamos entrar no link:
+```
+endereço_da_maquina/9116
+```
+Em Target colocamos o endereço do Swift e apenas submetemos , após isso todos os processos estarão prontos.
+
+
+

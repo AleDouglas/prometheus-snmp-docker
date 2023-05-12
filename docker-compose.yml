@@ -1,24 +1,38 @@
 version: '3'
+
 services:
   prometheus:
     image: prom/prometheus
+    networks:
+        - monitoring-network
     ports:
       - '9090:9090'
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     restart: always
 
+
   node-exporter:
     image: prom/node-exporter
+    networks:
+        - monitoring-network
     ports:
       - '9100:9100'
     restart: always
-    
+
+
   snmp-exporter:
     image: prom/snmp-exporter
+    networks:
+        - monitoring-network
     ports:
       - '9116:9116'
+      - 116:116/udp
     command: ["--config.file=/etc/snmp-exporter/snmp.yml"]
     volumes:
+      - ./mibs:/mibs
       - ./snmp.yml:/etc/snmp-exporter/snmp.yml
     restart: always
+
+networks:
+  monitoring-network:
