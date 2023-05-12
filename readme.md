@@ -23,7 +23,7 @@ git clone https://github.com/AleDouglas/prometheus-snmp-docker.git
 
 Utilizando arquivo docker-compose.yml, podemos iniciar os serviços usando o comando:
 ```
-docker-compose up -d
+docker compose up -d
 ```
   
 
