@@ -21,6 +21,16 @@ Isso iniciará os três serviços do Prometheus, Node Exporter e SNMP Exporter e
 **Verifique** se as portas **9090, 9100 e 9116** estão disponíveis em seu sistema antes de executar o docker-compose up -d para evitar conflitos com outros serviços em execução.
 Espero que isso ajude a configurar os serviços do **Prometheus, Node Exporter e SNMP Exporter usando o Docker Compose**.
 
+
+# Ligando SNMP Exporter ao IP do Switch
+
+Acessamos:
+
+```
+ip/9116
+```
+Após isso, basta em target colocar o IP do Switch e apenas submeter.
+
   
 
 
