@@ -23,7 +23,6 @@ Espero que isso ajude a configurar os serviços do **Prometheus, Node Exporter e
 
   
 
-###########################################################
 
   
 
@@ -55,7 +54,6 @@ sudo apt install golang-go # Necessário para compilar o arquivo generator
 git clone https://github.com/prometheus/snmp_exporter.git
 ```
   
-
 3. Make Generator
 ```
 cd generator/
@@ -64,23 +62,25 @@ sudo make mibs
 export MIBDIRS=mibs
 ```
   
-
  4. Configurar arquivo Generator
  ```
 Verificar arquivo: generator-example.yml
 ```
 
 5. Criando arquivo snmp.yml
+**Com isso, o generator irá criar um novo arquivo snmp.yml utilizando as configurações do generator.yml**
+
 ```
 ./generator generate
 ```
   
+6. Copiar arquivo snmp.yml para pasta de configuração
+**Devemos mover o arquivo snmp gerado para a pasta onde o docker-compose está localizado, substituíndo o arquivo snmp.yml antigo pelo novo gerado.**
 
-6. Copiar arquivo snmp.yml para pasta de configuração #
 ```
 sudo cp snmp.yml [path do docker]
+
 ```
-  
 
 7. Reiniciando serviços #
 ```
